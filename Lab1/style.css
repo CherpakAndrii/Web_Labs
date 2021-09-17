@@ -1,98 +1,98 @@
 :root {
-  --grid-gap-size: 3px;
-  --grid-gap-color: black;
-  --header-footer-bg: #b3daff;
-  --sidebar-bg: #ffe6cc;
-  --bottom-bg: #e6ffcc;
+    --grid-gap-size: 3px;
+    --grid-gap-color: black;
+    --header-footer-bg: #b3daff;
+    --sidebar-bg: #ffe6cc;
+    --bottom-bg: #e6ffcc;
 }
 
 body {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "lsb article rsb"
-    "lsb nav rsb"
-    "footer footer rsb";
-  grid-template-rows: 22% 47% 7% 22%;
-  grid-template-columns: 25% 49.35% 25%;
-  grid-gap: var(--grid-gap-size);
-  height: 100vh;
-  margin: 0;
-  background: var(--grid-gap-color);
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "lsb article rsb"
+        "lsb nav rsb"
+        "footer footer rsb";
+    grid-template-rows: 22% 47% 7% 22%;
+    grid-template-columns: 25% 49.35% 25%;
+    grid-gap: var(--grid-gap-size);
+    height: 100vh;
+    margin: 0;
+    background: var(--grid-gap-color);
 }
 header {
-  grid-area: header;
-  background: var(--header-footer-bg);
-  display: flex;
+    grid-area: header;
+    background: var(--header-footer-bg);
+    display: flex;
 }
 #text-in-header {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 8vh;
-  width: 20vw;
-  border: solid;
-  background: white;
-  margin-left: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 8vh;
+    width: 20vw;
+    border: solid;
+    background: white;
+    margin-left: 5vw;
 }
 #text-in-header span {
-  margin-right: 1vw;
+    margin-right: 1vw;
 }
 .another-text-in-header {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 1vw;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1vw;
 }
 .wrap {
-  width: 50%;
-  display: flex;
-  align-items: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
 footer {
-  grid-area: footer;
-  background: var(--header-footer-bg);
-  display: flex;
+    grid-area: footer;
+    background: var(--header-footer-bg);
+    display: flex;
 }
 nav {
-  grid-area: nav;
-  background: var(--bottom-bg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    grid-area: nav;
+    background: var(--bottom-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #text-in-footer {
-  height: 8vh;
-  width: 20vw;
-  border: solid;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 5vw;
+    height: 8vh;
+    width: 20vw;
+    border: solid;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
 }
 article {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  grid-area: article;
-  padding-right: 2%;
-  background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: article;
+    padding-right: 2%;
+    background: white;
 }
 .left-side-bar {
-  display: flex;
-  padding-right: 2%;
-  align-items: center;
-  justify-content: flex-end;
-  grid-area: lsb;
-  background: var(--sidebar-bg);
+    display: flex;
+    padding-right: 2%;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: lsb;
+    background: var(--sidebar-bg);
 }
 .right-side-bar {
-  display: flex;
-  padding-right: 2%;
-  align-items: center;
-  justify-content: flex-end;
-  grid-area: rsb;
-  background: var(--sidebar-bg);
+    display: flex;
+    padding-right: 2%;
+    align-items: center;
+    justify-content: flex-end;
+    grid-area: rsb;
+    background: var(--sidebar-bg);
 }
