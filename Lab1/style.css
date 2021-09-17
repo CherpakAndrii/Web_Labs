@@ -1,18 +1,18 @@
-:root{
-    --grid-gap-size: 3px;
-    --grid-gap-color: black;
-    --header-footer-bg: #b3daff;
-    --sidebar-bg: #ffe6cc;
-    --bottom-bg: #e6ffcc;
+:root {
+  --grid-gap-size: 3px;
+  --grid-gap-color: black;
+  --header-footer-bg: #b3daff;
+  --sidebar-bg: #ffe6cc;
+  --bottom-bg: #e6ffcc;
 }
 
 body {
   display: grid;
   grid-template-areas:
     "header header header"
-    "nav article ads"
-    "nav bottom ads"
-    "footer footer ads";
+    "lsb article rsb"
+    "lsb nav rsb"
+    "footer footer rsb";
   grid-template-rows: 22% 47% 7% 22%;
   grid-template-columns: 25% 49.35% 25%;
   grid-gap: var(--grid-gap-size);
@@ -20,7 +20,7 @@ body {
   margin: 0;
   background: var(--grid-gap-color);
 }
-#pageHeader {
+header {
   grid-area: header;
   background: var(--header-footer-bg);
   display: flex;
@@ -50,13 +50,13 @@ body {
   display: flex;
   align-items: center;
 }
-#pageFooter {
+footer {
   grid-area: footer;
   background: var(--header-footer-bg);
   display: flex;
 }
-#bottom {
-  grid-area: bottom;
+nav {
+  grid-area: nav;
   background: var(--bottom-bg);
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ body {
   justify-content: center;
   margin-left: 5vw;
 }
-#mainArticle {
+article {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -80,19 +80,19 @@ body {
   padding-right: 2%;
   background: white;
 }
-#leftsidebar {
+.left-side-bar {
   display: flex;
   padding-right: 2%;
   align-items: center;
   justify-content: flex-end;
-  grid-area: nav;
+  grid-area: lsb;
   background: var(--sidebar-bg);
 }
-#rightsidebar {
+.right-side-bar {
   display: flex;
   padding-right: 2%;
   align-items: center;
   justify-content: flex-end;
-  grid-area: ads;
+  grid-area: rsb;
   background: var(--sidebar-bg);
 }
