@@ -44,11 +44,12 @@ header {
   display: flex;
   flex: 1;
   flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
   min-width: 250px;
   padding-right: 2%;
+  padding-left: 2%;
   overflow: auto;
+  text-align: center;
   background: var(--sidebar-bg);
 }
 #not-rsb{
@@ -115,12 +116,12 @@ nav{
   flex: 5;
 }
 
-#left-side-bar > span:last-child ol{
+#left-side-bar > div:last-child ol{
   display: flex;
   flex-direction: column;
 }
 
-#left-side-bar > span:last-child ol li{
+#left-side-bar > div:last-child ol li{
   flex: 1;
 }
 
