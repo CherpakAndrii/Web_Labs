@@ -1,28 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Lab1_page5</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <div class="wrap">
-                <div id="text-in-header">
-                    <span>Header</span>
-                </div>
-            </div>
-            <div class="another-text-in-header">1</div>
-        </header>
-        <article>Article</article>
-        <aside class="left-side-bar">leftsidebar</aside>
-        <aside class="right-side-bar">rightsidebar</aside>
-        <nav>bottom</nav>
-        <footer>
-            <div class="wrap">
-                <div id="text-in-footer">Footer</div>
-            </div>
-            <div class="another-text-in-header">1</div>
-        </footer>
-    </body>
+<head>
+  <meta charset="utf-8" />
+  <title>Lab1_page1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div id="text-in-header">
+      <h1 style="font-size: 20px">П'ята сторінка</h1>
+    </div>
+  </div>
+  <div class="another-text-in-header">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+    mollit anim id est laborum. Something else...
+  </div>
+</header>
+<div id = "not-header">
+  <aside id = "right-side-bar">
+    <span style="margin: 5%">Тримайте котика:</span>
+    <span
+      style="
+          flex: 1;
+          display: flex;
+          overflow: auto;
+        "
+    >
+        <img
+          style="
+            flex: 1;
+            width: 100%;
+            min-width: 240px;
+            height: 65vh;
+            min-height: 325px;
+          "
+          src="data:image/jpeg;base64,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"
+          alt="котик"
+        />
+      </span>
+  </aside>
+  <div id = "not-rsb">
+    <footer>
+      <div class="wrap">
+        <div id="text-in-footer">
+          <h1 style="font-size: 20px">Гарного дня)</h1>
+        </div>
+      </div>
+      <div class="another-text-in-header">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum. Something else...
+      </div>
+    </footer>
+    <div id = "not-footer">
+      <aside id="left-side-bar">
+        <div >Ще одне меню:</div>
+        <div>
+        <ol>
+          <li><a href="page1.html">Page1</a></li>
+          <li><a href="page2.html">Page2</a></li>
+          <li><a href="page3.html">Page3</a></li>
+          <li><a href="page4.html">Page4</a></li>
+          <li><span class="current-page-menu-link">Page5</span></li>
+        </ol>
+      </div>
+      </aside>
+      <div id = "not-lsb">
+        <nav>
+          <div class="link"><a href="page1.html">Page1</a></div>
+          <div class="link"><a href="page2.html">Page2</a></div>
+          <div class="link"><a href="page3.html">Page3</a></div>
+          <div class="link"><a href="page4.html">Page4</a></div>
+          <div class="link current-page">Page5</div>
+        </nav>
+        <article>
+          <span>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.
+      </span>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 </html>

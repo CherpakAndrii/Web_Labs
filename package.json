@@ -1,0 +1,55 @@
+{
+  "name": "lab1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "page1.html",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint . --no-error-on-unmatched-pattern",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "npx prettier .",
+    "format:fix": "npx prettier --write .",
+    "lint:style": "stylelint \"Lab1/*.+(scss|css|svelte)\"",
+    "lint:style:fix": "stylelint \"Lab1/*.+(scss|css|svelte)\" --fix",
+    "prepare": "husky install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nodeart/eslint-plugin": "^1.3.0",
+    "@nodeart/stylelint-config-nodeart": "0.0.4",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "eslint-plugin-sonarjs": "^0.10.0",
+    "husky": "^7.0.2",
+    "prettier": "2.4.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-prettier": "^8.0.2"
+  },
+  "stylelint": {
+    "extends": [
+      "@nodeart/stylelint-config-nodeart",
+      "stylelint-config-prettier"
+    ],
+    "ignoreFiles": [
+      "src/styles/normalize.+(scss|css)",
+      "src/styles/fonts.+(scss|css)",
+      "src/styles/vars.+(scss|css)"
+    ],
+    "rules": {
+      "no-descending-specificity": null,
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "global"
+          ]
+        }
+      ]
+    }
+  }
+}
