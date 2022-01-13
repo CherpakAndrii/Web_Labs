@@ -28,6 +28,11 @@ body {
   overflow: auto;
   background: var(--grid-gap-color);
 }
+
+.capitalize {
+  text-transform: capitalize;
+}
+
 header {
   display: flex;
   flex: 1;
