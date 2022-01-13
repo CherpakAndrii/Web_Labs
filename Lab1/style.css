@@ -102,7 +102,6 @@ footer {
   display: flex;
   flex: 1;
   flex-direction: column;
-  grid-area: lsb;
   align-items: end;
   padding-right: 2%;
   overflow: auto;

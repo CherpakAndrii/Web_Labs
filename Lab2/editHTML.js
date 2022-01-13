@@ -7,13 +7,13 @@ export const renderEditHtml = () => {
     btn.addEventListener('dblclick', event => {
       const sectionNumber = event.target.dataset['sectionBtn'];
       const section = document.querySelector(
-        `[data-section="${sectionNumber}"]`,
+        `[data-section="${sectionNumber}"]`
       );
       const textarea = new DOMElement(
         'textarea',
         section.textContent,
         'form-control',
-        { id: `text-area-${sectionNumber}` },
+        { id: `text-area-${sectionNumber}` }
       ).render();
       //const label = new DOMElement("label", "Edit HTML",
       // "form-label", { for: `text-area-${sectionNumber}` }).render();
@@ -22,7 +22,7 @@ export const renderEditHtml = () => {
       const submitBtn = new DOMElement(
         'button',
         'Submit',
-        'btn btn-primary',
+        'btn btn-primary'
       ).render();
       const handleFormSubmit = event => {
         event.preventDefault();
