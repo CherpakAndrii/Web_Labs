@@ -118,8 +118,8 @@ article {
   display: flex;
   flex: 7;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: end;
+  justify-content: center;
   padding-right: 2%;
 }
 nav {
