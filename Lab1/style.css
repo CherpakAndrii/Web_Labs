@@ -14,6 +14,7 @@
   --standart-menu-link-color: black;
   --current-page-menu-link-color: blue;
   --article-bg: white;
+  --text-in-header-h1-font-size: 20px;
 }
 
 body {
@@ -33,14 +34,14 @@ header {
   background: var(--header-footer-bg);
 }
 
-#not-header{
+#not-header {
   display: flex;
   flex: 4;
   flex-direction: row-reverse;
   background: var(--article-bg);
 }
 
-#right-side-bar{
+#right-side-bar {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -52,25 +53,25 @@ header {
   text-align: center;
   background: var(--sidebar-bg);
 }
-#not-rsb{
+#not-rsb {
   display: flex;
   flex: 3;
   flex-direction: column-reverse;
   min-width: 750px;
 }
-footer{
+footer {
   display: flex;
   flex: 1;
   min-width: 750px;
   background: var(--header-footer-bg);
 }
-#not-footer{
+#not-footer {
   display: flex;
   flex: 3;
   flex-direction: row;
 }
 
-#left-side-bar{
+#left-side-bar {
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -81,20 +82,21 @@ footer{
   background: var(--sidebar-bg);
 }
 
-#not-lsb{
+#not-lsb {
   display: flex;
   flex: 2;
   flex-direction: column-reverse;
 }
 
-article{
+article {
   display: flex;
   flex: 7;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   padding-right: 2%;
 }
-nav{
+nav {
   display: flex;
   flex: 1;
   align-items: center;
@@ -116,12 +118,12 @@ nav{
   flex: 5;
 }
 
-#left-side-bar > div:last-child ol{
+#left-side-bar > div:last-child ol {
   display: flex;
   flex-direction: column;
 }
 
-#left-side-bar > div:last-child ol li{
+#left-side-bar > div:last-child ol li {
   flex: 1;
 }
 
@@ -143,6 +145,7 @@ nav{
 }
 #text-in-header h1 {
   margin: 1vw;
+  font-size: var(--text-in-header-h1-font-size);
   text-align: end;
 }
 .another-text-in-header {
@@ -204,6 +207,10 @@ nav .link:hover {
   border: solid;
 }
 
+#text-in-footer h1 {
+  font-size: var(--text-in-header-h1-font-size);
+}
+
 article span {
   margin: 5vmin 2vmin 5vmin 5vmin;
   overflow: auto;
@@ -213,4 +220,11 @@ article span {
 }
 .current-page-menu-link {
   color: var(--current-page-menu-link-color);
+}
+#swap-button {
+  margin-top: auto;
+}
+#forSwap {
+  display: flex;
+  flex-direction: column;
 }
