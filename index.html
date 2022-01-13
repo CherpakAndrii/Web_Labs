@@ -33,24 +33,11 @@
         <button id="swap-button">s</button>
       </div>
     </header>
-    <main id="not-header">
+    <main class="not-header">
       <aside id="right-side-bar" data-section="4">
-        <span style="margin: 5%">Тримайте котика:</span>
-        <span style="flex: 1; display: flex; overflow: auto">
-          <img
-            style="
-              flex: 1;
-              width: 100%;
-              min-width: 240px;
-              height: 65vh;
-              margin-left: auto;
-              margin-right: auto;
-              display: block;
-              min-height: 325px;
-            "
-            src="/Lab1/images/cat1.jpg"
-            alt="котик"
-          />
+        <span>Тримайте котика:</span>
+        <span id="img-container">
+          <img src="/Lab1/images/cat1.jpg" alt="котик" />
         </span>
         <div class="mb-3 form-check">
           <input
@@ -63,7 +50,7 @@
           >
         </div>
       </aside>
-      <div id="not-rsb">
+      <div class="not-rsb">
         <footer data-section="6">
           <div class="wrap">
             <div id="text-in-footer">
@@ -81,7 +68,7 @@
             else...
           </div>
         </footer>
-        <div id="not-footer">
+        <nav class="not-footer">
           <aside id="left-side-bar" data-section="2">
             <div>Ще одне меню:</div>
             <div>
@@ -94,7 +81,7 @@
               </ol>
             </div>
           </aside>
-          <div id="not-lsb" data-section="5">
+          <div class="not-lsb" data-section="5">
             <nav>
               <div class="link current-page">Page1</div>
               <div class="link"><a href="Lab1/page2.html">Page2</a></div>
@@ -169,7 +156,7 @@
               </ol>
             </article>
           </div>
-        </div>
+        </nav>
       </div>
     </main>
     <script src="./Lab2/script.js" type="module"></script>

@@ -6,12 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint . --no-error-on-unmatched-pattern",
-    "lint:fix": "npm run lint -- --fix",
-    "format": "prettier .",
-    "format:fix": "prettier --write .",
-    "lint:style": "stylelint \"Lab*/*.+(js|scss|css|svelte)\"",
-    "lint:style:fix": "stylelint \"Lab*/*.+(js|scss|css|svelte)\" --fix",
+    "lint": "eslint . --no-error-on-unmatched-pattern --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix --ignore-path .gitignore",
+    "format": "prettier . --ignore-path .gitignore",
+    "format:fix": "prettier --write . --ignore-path .gitignore",
+    "lint:style": "stylelint \"Lab*/*.+(js|scss|css|svelte)\" --ignore-path .gitignore",
+    "lint:style:fix": "stylelint \"Lab*/*.+(js|scss|css|svelte)\" --fix --ignore-path .gitignore",
     "prepare": "husky install"
   },
   "author": "",
