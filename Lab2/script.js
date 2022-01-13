@@ -3,6 +3,7 @@ import { form as triangleForm } from './triangle.js';
 import { getCookie, /*setCookie, */ deleteCookie } from './utils.js';
 import { capitalize } from './capitalize.js';
 import { renderEditHtml } from './editHTML.js';
+import { getPentagonSquare } from './pentagonSquare.js';
 
 window.addEventListener('DOMContentLoaded', () => {
   const cookieResult = getCookie('result');
@@ -17,21 +18,4 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 capitalize();
 renderEditHtml();
-
-//const squareResultPlaceholder =
-// document.getElementById("section__square-result");
-
-//const PENTAGON_SIDE = 5;
-
-/**
- *
- * @param {Number} R
- */
-//function calculateSquare(R) {
-//let square = 0;
-
-//return square;
-//}
-
-//const square = calculateSquare(PENTAGON_SIDE);
-// squareResultPlaceholder.textContent = square.toString();
+getPentagonSquare(5);

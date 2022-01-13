@@ -122,6 +122,14 @@ article {
   justify-content: center;
   padding-right: 2%;
 }
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 5vmin 2vmin 5vmin 5vmin;
+}
 nav {
   display: flex;
   flex: 1;

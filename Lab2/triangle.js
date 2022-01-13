@@ -8,7 +8,11 @@ form.addEventListener('submit', event => {
   const side2 = parseInt(formData.side2);
   const side3 = parseInt(formData.side3);
   let result = 'a triangle can be constructed';
-  if (sumIsLess(side1, side2, side3) || sumIsLess(side2, side3, side1) || sumIsLess(side3, side1, side2)) {
+  if (
+    sumIsLess(side1, side2, side3) ||
+    sumIsLess(side2, side3, side1) ||
+    sumIsLess(side3, side1, side2)
+  ) {
     result = 'a triangle cannot be constructed';
   }
 
@@ -23,6 +27,6 @@ form.addEventListener('submit', event => {
  * @param {Number} b
  * @param {Number} c
  */
-function sumIsLess(a, b, c){
-  return(a+b<c);
+function sumIsLess(a, b, c) {
+  return a + b < c;
 }
