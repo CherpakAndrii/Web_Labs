@@ -15,10 +15,14 @@ export const renderEditHtml = () => {
         'form-control',
         { id: `text-area-${sectionNumber}` }
       ).render();
-      //const label = new DOMElement("label", "Edit HTML",
-      // "form-label", { for: `text-area-${sectionNumber}` }).render();
-      //const textareaContainer = new DOMElement("div",
-      // [label, textarea], "mb-3").render();
+      const label = new DOMElement('label', 'Edit HTML', 'form-label', {
+        for: `text-area-${sectionNumber}`,
+      }).render();
+      const textareaContainer = new DOMElement(
+        'div',
+        [label, textarea],
+        'mb-3'
+      ).render();
       const submitBtn = new DOMElement(
         'button',
         'Submit',
@@ -28,9 +32,15 @@ export const renderEditHtml = () => {
         event.preventDefault();
         section.textContent = textarea.value;
       };
-      const form = new DOMElement('form', [textarea, submitBtn], 'form', '', {
-        submit: handleFormSubmit,
-      }).render();
+      const form = new DOMElement(
+        'form',
+        [textareaContainer, submitBtn],
+        'form',
+        '',
+        {
+          submit: handleFormSubmit,
+        }
+      ).render();
       section.append(form);
     });
   });

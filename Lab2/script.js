@@ -1,5 +1,5 @@
 import { form as triangleForm } from './triangle.js';
-//import { swapButton } from "./swap.js";
+import { swapTexts } from './swap.js';
 import { getCookie, /*setCookie, */ deleteCookie } from './utils.js';
 import { capitalize } from './capitalize.js';
 import { renderEditHtml } from './editHTML.js';
@@ -19,3 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
 capitalize();
 renderEditHtml();
 getPentagonSquare(5);
+
+const swapButton = document.getElementById('swap-button');
+swapButton.addEventListener('click', ev => {
+  ev.preventDefault();
+  swapTexts();
+});
