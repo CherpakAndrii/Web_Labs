@@ -8,12 +8,20 @@ import { getPentagonSquare } from './pentagonSquare.js';
 window.addEventListener('DOMContentLoaded', () => {
   const cookieResult = getCookie('result');
   if (typeof cookieResult !== 'undefined') {
-    triangleForm.style.display = 'none';
-    alert(cookieResult);
-    deleteCookie('result');
-    alert('Cookies cleared');
-    triangleForm.reset();
-    triangleForm.style.display = 'initial';
+    new Promise(resolve => {
+      triangleForm.style.display = 'none';
+      resolve()
+    })
+      .then(() => {
+        const res = confirm(`Cookies: ${cookieResult}. If you press "OK" button they will be cleared`);
+        if (res) {
+          deleteCookie('result');
+          setTimeout(() => {
+            triangleForm.style.display = 'initial';
+          }, 1000)
+        }
+
+      })
   }
 });
 capitalize();

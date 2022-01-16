@@ -19,6 +19,7 @@ form.addEventListener('submit', event => {
   alert(result);
   document.cookie = `result=${result}; path=/; expires=01-01-2050`;
   console.log(document.cookie);
+  event.target.reset()
 });
 
 /**
