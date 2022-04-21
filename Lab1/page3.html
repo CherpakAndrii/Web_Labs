@@ -1,55 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>Lab1_page1</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-<header>
-  <div class="wrap">
-    <div id="text-in-header">
-      <h1 style="font-size: 20px">Третя сторінка</h1>
-    </div>
-  </div>
-  <div class="another-text-in-header">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-    mollit anim id est laborum. Something else...
-  </div>
-</header>
-<div id = "not-header">
-  <aside id = "right-side-bar">
-    <span style="margin: 5%">Тримайте котика:</span>
-    <span
-      style="
-          flex: 1;
-          display: flex;
-          overflow: auto;
-        "
-    >
-        <img
-          style="
-            flex: 1;
-            width: 100%;
-            min-width: 240px;
-            height: 65vh;
-            min-height: 325px;
-          "
-          src="/Lab1/images/cat3.jpg"
-          alt="котик"
-        />
-      </span>
-  </aside>
-  <div id = "not-rsb">
-    <footer>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab1_page1</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
       <div class="wrap">
-        <div id="text-in-footer">
-          <h1 style="font-size: 20px">Гарного дня)</h1>
+        <div id="text-in-header">
+          <h1>Третя сторінка</h1>
         </div>
       </div>
       <div class="another-text-in-header">
@@ -61,45 +22,71 @@
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum. Something else...
       </div>
-    </footer>
-    <div id = "not-footer">
-      <aside id="left-side-bar">
-        <div >Ще одне меню:</div>
-        <div>
-        <ol>
-          <li><a href="../index.html">Page1</a></li>
-          <li><a href="page2.html">Page2</a></li>
-          <li><span class="current-page-menu-link">Page3</span></li>
-          <li><a href="page4.html">Page4</a></li>
-          <li><a href="page5.html">Page5</a></li>
-        </ol>
-      </div>
+    </header>
+    <main class="not-header">
+      <aside id="right-side-bar">
+        <span>Тримайте котика:</span>
+        <span id="img-container">
+          <img src="/Lab1/images/cat3.jpg" alt="котик" />
+        </span>
       </aside>
-      <div id = "not-lsb">
-        <nav>
-          <div class="link"><a href="../index.html">Page1</a></div>
-          <div class="link"><a href="page2.html">Page2</a></div>
-          <div class="link current-page">Page3</div>
-          <div class="link"><a href="page4.html">Page4</a></div>
-          <div class="link"><a href="page5.html">Page5</a></div>
-        </nav>
-        <article>
-          <span>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
-        adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-        laboris nisi ut aliquip ex ea commodo consequat.
-      </span>
-        </article>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+      <nav class="not-rsb">
+        <footer>
+          <div class="wrap">
+            <div id="text-in-footer">
+              <h1>Гарного дня)</h1>
+            </div>
+          </div>
+          <div class="another-text-in-header">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum. Something
+            else...
+          </div>
+        </footer>
+        <div class="not-footer">
+          <aside id="left-side-bar">
+            <div>Ще одне меню:</div>
+            <div>
+              <ol>
+                <li><a href="../index.html">Page1</a></li>
+                <li><a href="page2.html">Page2</a></li>
+                <li><span class="current-page-menu-link">Page3</span></li>
+                <li><a href="page4.html">Page4</a></li>
+                <li><a href="page5.html">Page5</a></li>
+              </ol>
+            </div>
+          </aside>
+          <div class="not-lsb">
+            <nav>
+              <div class="link"><a href="../index.html">Page1</a></div>
+              <div class="link"><a href="page2.html">Page2</a></div>
+              <div class="link current-page">Page3</div>
+              <div class="link"><a href="page4.html">Page4</a></div>
+              <div class="link"><a href="page5.html">Page5</a></div>
+            </nav>
+            <article>
+              <span>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </span>
+            </article>
+          </div>
+        </div>
+      </nav>
+    </main>
+  </body>
 </html>
